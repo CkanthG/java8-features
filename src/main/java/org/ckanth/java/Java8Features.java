@@ -18,6 +18,9 @@ import java.util.stream.Stream;
 
 public class Java8Features {
     public static void main(String[] args) {
+        System.out.println("IterateArrayList Class Invoked from Java8Features");
+        IterateArrayList.main(args);
+        System.out.println("IterateArrayList Class Executed Successfully");
         String paytmPayment = new Paytm().doPayment("Germany", "India");
         System.out.println(paytmPayment);
         String amazonPayment = new AmazonPay().doPayment("India", "Germany");
@@ -26,8 +29,7 @@ public class Java8Features {
         new Java8Features().userStreamFlatMapOperations();
         new Java8Features().countRepeatedCharacters("sreekanth");
         new Java8Features().findHighestSalary();
-        System.out.println("IterateArrayList Class Invoked from Java8Features");
-        IterateArrayList.main(args);
+
     }
     public void userStreamMapOperations() {
         List<User> users = Stream.of(
