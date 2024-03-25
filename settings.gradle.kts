@@ -1,2 +1,2 @@
-rootProject.name = "Java8"
+rootProject.name = "Java8Features"
 

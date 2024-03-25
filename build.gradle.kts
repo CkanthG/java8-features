@@ -2,8 +2,8 @@ plugins {
     id("java")
 }
 
-group = "org.ckanth.java"
-version = "1.0.0"
+group = "classes"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
