@@ -1,6 +1,8 @@
 package org.ckanth.java;
 
 import org.ckanth.java.com.corejava.IterateArrayList;
+import org.ckanth.java.com.java7.FutureExample;
+import org.ckanth.java.com.java7.PrintEvenOrOddUsingThread;
 import org.ckanth.java.com.java8.AmazonPay;
 import org.ckanth.java.com.java8.Paytm;
 import org.ckanth.java.com.models.Employee;
@@ -11,13 +13,14 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.Comparator;
 import java.util.Optional;
+import java.util.concurrent.ExecutionException;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Java8Features {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("IterateArrayList Class Invoked from Java8Features");
         IterateArrayList.main(args);
         System.out.println("IterateArrayList Class Executed Successfully");
@@ -30,6 +33,8 @@ public class Java8Features {
         new Java8Features().countRepeatedCharacters("sreekanth");
         new Java8Features().findHighestSalary();
         org.ckanth.java.functionalinterfaces.Functions.main(args);
+        FutureExample.main(args);
+        PrintEvenOrOddUsingThread.main(args);
     }
     public void userStreamMapOperations() {
         List<User> users = Stream.of(
