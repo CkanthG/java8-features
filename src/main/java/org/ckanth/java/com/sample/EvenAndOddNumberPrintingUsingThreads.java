@@ -1,4 +1,4 @@
-package org.ckanth.java.com.interview;
+package org.ckanth.java.com.sample;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -13,20 +13,20 @@ public class EvenAndOddNumberPrintingUsingThreads {
         int[] a = IntStream.range(1, 10).toArray();
         evenThread = () -> Arrays.stream(a).asLongStream().forEach(
                 i -> {
-                    if (i%2 == 0) {
-                        System.out.println("Even Number "+ i);
-                    }
-                }
-        );
-        evenThread.run();
-        oddThread = () -> Arrays.stream(a).asLongStream().forEach(
-                i -> {
                     if (i%2 != 0) {
                         System.out.println("Odd Number "+ i);
                     }
                 }
         );
-        oddThread.run();
+        new Thread(evenThread).start();
+        oddThread = () -> Arrays.stream(a).asLongStream().forEach(
+                i -> {
+                    if (i%2 == 0) {
+                        System.out.println("Even Number "+ i);
+                    }
+                }
+        );
+        new Thread(oddThread).start();
     }
 
     public static void main(String[] args) {

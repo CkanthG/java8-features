@@ -1,6 +1,8 @@
 package org.ckanth.java;
 
 import org.ckanth.java.com.corejava.IterateArrayList;
+import org.ckanth.java.com.sample.EvenAndOddNumberPrintingUsingThreads;
+import org.ckanth.java.com.sample.Printing1to100;
 import org.ckanth.java.com.java7.FutureExample;
 import org.ckanth.java.com.java7.PrintEvenOrOddUsingThread;
 import org.ckanth.java.com.java8.AmazonPay;
@@ -35,6 +37,8 @@ public class Java8Features {
         org.ckanth.java.functionalinterfaces.Functions.main(args);
         FutureExample.main(args);
         PrintEvenOrOddUsingThread.main(args);
+        Printing1to100.main(args);
+        EvenAndOddNumberPrintingUsingThreads.main(args);
     }
     public void userStreamMapOperations() {
         List<User> users = Stream.of(
