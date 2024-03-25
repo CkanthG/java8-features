@@ -29,7 +29,7 @@ public class Java8Features {
         new Java8Features().userStreamFlatMapOperations();
         new Java8Features().countRepeatedCharacters("sreekanth");
         new Java8Features().findHighestSalary();
-
+        org.ckanth.java.functionalinterfaces.Functions.main(args);
     }
     public void userStreamMapOperations() {
         List<User> users = Stream.of(

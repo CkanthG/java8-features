@@ -1,4 +1,4 @@
-package org.ckanth.java.com.functionalinterfaces;
+package org.ckanth.java.functionalinterfaces;
 
 import java.util.HashMap;
 import java.util.Map;

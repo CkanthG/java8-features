@@ -1,4 +1,4 @@
-package org.ckanth.java.com.functionalinterfaces;
+package org.ckanth.java.functionalinterfaces;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

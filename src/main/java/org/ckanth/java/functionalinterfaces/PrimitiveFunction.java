@@ -7,7 +7,7 @@ public class PrimitiveFunction {
         System.out.println(r.length);
     }
 
-    public byte[] transformArray(short[] array, org.ckanth.java.com.functionalinterfaces.ShortToByteFunction function) {
+    public byte[] transformArray(short[] array, ShortToByteFunction function) {
         byte[] transformedArray = new byte[array.length];
         for (int i = 0; i < array.length; i++) {
             transformedArray[i] = function.applyAsByte(array[i]);
