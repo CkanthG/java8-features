@@ -9,6 +9,7 @@ public class Printing1to100 {
     public static void print() {
         int[] a = IntStream.range(1, 100).toArray();
         Arrays.stream(a).asLongStream().forEach(System.out::print);
+        System.out.println();
     }
     public static void main(String[] args) {
         print();

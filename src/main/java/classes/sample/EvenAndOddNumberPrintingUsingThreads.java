@@ -10,7 +10,6 @@ public class EvenAndOddNumberPrintingUsingThreads {
     Runnable oddThread;
 
     public void print() {
-        System.out.println();
         int[] a = IntStream.range(1, 10).toArray();
         evenThread = () -> Arrays.stream(a).asLongStream().forEach(
                 i -> {

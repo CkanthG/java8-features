@@ -35,10 +35,15 @@ public class Java8Features {
         new Java8Features().userStreamFlatMapOperations();
         new Java8Features().countRepeatedCharacters("sreekanth");
         new Java8Features().findHighestSalary();
+        System.out.println("Functions Class Invoked from Java8Features");
         Functions.main(args);
+        System.out.println("FutureExample Class Invoked from Java8Features");
         FutureExample.main(args);
+        System.out.println("PrintEvenOrOddUsingThread Class Invoked from Java8Features");
         PrintEvenOrOddUsingThread.main(args);
+        System.out.println("Printing1to100 Class Invoked from Java8Features");
         Printing1to100.main(args);
+        System.out.println("EvenAndOddNumberPrintingUsingThreads Class Invoked from Java8Features");
         EvenAndOddNumberPrintingUsingThreads.main(args);
     }
     public void userStreamMapOperations() {
