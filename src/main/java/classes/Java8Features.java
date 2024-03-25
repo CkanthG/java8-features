@@ -50,7 +50,7 @@ public class Java8Features {
         List<User> users = Stream.of(
                 new User("sreekanth", "9848962806", Arrays.asList("sreekanthgaddoju@gmail.com", "ssist@gmail.com")),
                 new User("devansh", "9848962807", Arrays.asList("devanshgaddoju@gmail.com", "dev@gmail.com"))
-        ).toList();
+        ).collect(Collectors.toList());
         List<String> phoneNumbersList = users.stream().map(User::getPhone).collect(Collectors.toList());
         System.out.println(phoneNumbersList);
     }
@@ -58,7 +58,7 @@ public class Java8Features {
         List<User> users = Stream.of(
                 new User("sreekanth", "9848962806", Arrays.asList("sreekanthgaddoju@gmail.com", "ssist@gmail.com")),
                 new User("devansh", "9848962807", Arrays.asList("devanshgaddoju@gmail.com", "dev@gmail.com"))
-        ).toList();
+        ).collect(Collectors.toList());
         List<String> emailList = users.stream().flatMap(user -> user.getEmail().stream()).collect(Collectors.toList());
         System.out.println(emailList);
     }
@@ -79,7 +79,7 @@ public class Java8Features {
                 new Employee(3, "Sreekanth", "QA", 300000),
                 new Employee(4, "Ckanth", "QA", 100000),
                 new Employee(5, "Bishwas", "DEVOPS", 400000)
-        ).toList();
+        ).collect(Collectors.toList());
 
         Comparator<Employee> salaryComp = Comparator.comparing(Employee::getSalary);
         Map<String, Optional<Employee>> salaryMap = employeeList.stream().collect(
