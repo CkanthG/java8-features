@@ -10,6 +10,8 @@ import classes.functionalinterfaces.Functions;
 
 import java.util.concurrent.ExecutionException;
 
+import static classes.java8.HiddenFeaturesInCollections.*;
+
 public class Java8Features {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         System.out.println("StreamOfNullable");
@@ -39,6 +41,13 @@ public class Java8Features {
         new MapOperations().userStreamFlatMapOperations();
         new CountRepeatedChars().countRepeatedCharacters("sreekanth");
         new MapOperations().findHighestSalary();
+        System.out.println("Java Collections Hidden Features Start");
+        nCopies();
+        frequency();
+        disJoint();
+        singleton();
+        rotate();
+        System.out.println("Java Collections Hidden Features End");
         System.out.println("Functions Class Invoked from Java8Features");
         Functions.main(args);
         System.out.println("FutureExample Class Invoked from Java8Features");
